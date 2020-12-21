@@ -71,64 +71,97 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         btn_open = new javax.swing.JButton();
         lbl_img_src = new javax.swing.JLabel();
-        lbl_img_h = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         lbl_img_s = new javax.swing.JLabel();
-        lbl_img_v = new javax.swing.JLabel();
         slider_h = new javax.swing.JSlider();
+        slider_h1 = new javax.swing.JSlider();
+        lbl_h1_val = new javax.swing.JLabel();
+        lbl_h_val = new javax.swing.JLabel();
+        slider_s1 = new javax.swing.JSlider();
+        lbl_s_val = new javax.swing.JLabel();
+        lbl_s1_val = new javax.swing.JLabel();
         slider_s = new javax.swing.JSlider();
         slider_v = new javax.swing.JSlider();
+        slider_v1 = new javax.swing.JSlider();
+        lbl_v1_val = new javax.swing.JLabel();
+        lbl_v_val = new javax.swing.JLabel();
+        lbl_img_v = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lbl_img_h = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         lbl_img_h_thres = new javax.swing.JLabel();
         lbl_img_s_thres = new javax.swing.JLabel();
         lbl_img_v_thres = new javax.swing.JLabel();
-        lbl_h_val = new javax.swing.JLabel();
-        lbl_s_val = new javax.swing.JLabel();
-        lbl_v_val = new javax.swing.JLabel();
-        btn_thres = new javax.swing.JButton();
         lbl_img_mask = new javax.swing.JLabel();
-        btn_extend = new javax.swing.JButton();
-        lbl_img_other = new javax.swing.JLabel();
-        slider_h1 = new javax.swing.JSlider();
-        lbl_h1_val = new javax.swing.JLabel();
-        slider_s1 = new javax.swing.JSlider();
-        lbl_s1_val = new javax.swing.JLabel();
-        slider_v1 = new javax.swing.JSlider();
-        lbl_v1_val = new javax.swing.JLabel();
         fieldArea = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        btn_thres = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        lbl_img_other = new javax.swing.JLabel();
+        btn_extend = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("program");
+        setBackground(new java.awt.Color(225, 225, 225));
 
-        btn_open.setText("OPEN TOK");
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(424, 705));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_open.setText("Open Image");
         btn_open.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_openActionPerformed(evt);
             }
         });
+        jPanel2.add(btn_open, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
         lbl_img_src.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lbl_img_src.setToolTipText("");
         lbl_img_src.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lbl_img_src.setBorder(javax.swing.BorderFactory.createTitledBorder("Source"));
+        jPanel2.add(lbl_img_src, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 210, 160));
 
-        lbl_img_h.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_h.setToolTipText("");
-        lbl_img_h.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_h.setBorder(javax.swing.BorderFactory.createTitledBorder("Channel H"));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jLabel1.setText("Preprocessing and Segmentation of Input Image");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 14, -1, -1));
+
+        jPanel3.setBackground(new java.awt.Color(196, 196, 196));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lbl_img_s.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         lbl_img_s.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lbl_img_s.setToolTipText("");
         lbl_img_s.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lbl_img_s.setBorder(javax.swing.BorderFactory.createTitledBorder("Channel S"));
+        jPanel3.add(lbl_img_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 43, 161, 97));
 
-        lbl_img_v.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_v.setToolTipText("");
-        lbl_img_v.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_v.setBorder(javax.swing.BorderFactory.createTitledBorder("Channel V"));
-
+        slider_h.setBackground(new java.awt.Color(196, 196, 196));
         slider_h.setMaximum(180);
         slider_h.setValue(0);
+        slider_h.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         slider_h.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 slider_hMouseDragged(evt);
@@ -139,80 +172,12 @@ public class MainWindow extends javax.swing.JFrame {
                 slider_hMouseReleased(evt);
             }
         });
+        jPanel3.add(slider_h, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 151, 161, -1));
 
-        slider_s.setMaximum(255);
-        slider_s.setValue(0);
-        slider_s.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                slider_sMouseDragged(evt);
-            }
-        });
-        slider_s.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                slider_sMouseReleased(evt);
-            }
-        });
-
-        slider_v.setMaximum(255);
-        slider_v.setValue(0);
-        slider_v.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                slider_vMouseDragged(evt);
-            }
-        });
-        slider_v.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                slider_vMouseReleased(evt);
-            }
-        });
-
-        lbl_img_h_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_h_thres.setToolTipText("");
-        lbl_img_h_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_h_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres H"));
-
-        lbl_img_s_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_s_thres.setToolTipText("");
-        lbl_img_s_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_s_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres S"));
-
-        lbl_img_v_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_v_thres.setToolTipText("");
-        lbl_img_v_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_v_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres V"));
-
-        lbl_h_val.setText("0");
-
-        lbl_s_val.setText("0");
-
-        lbl_v_val.setText("0");
-
-        btn_thres.setText("Threshold");
-        btn_thres.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_thresActionPerformed(evt);
-            }
-        });
-
-        lbl_img_mask.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_mask.setToolTipText("");
-        lbl_img_mask.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_mask.setBorder(javax.swing.BorderFactory.createTitledBorder("Mask"));
-
-        btn_extend.setText("Extend");
-        btn_extend.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_extendActionPerformed(evt);
-            }
-        });
-
-        lbl_img_other.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        lbl_img_other.setToolTipText("");
-        lbl_img_other.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbl_img_other.setBorder(javax.swing.BorderFactory.createTitledBorder("Other"));
-
+        slider_h1.setBackground(new java.awt.Color(196, 196, 196));
         slider_h1.setMaximum(180);
         slider_h1.setValue(180);
+        slider_h1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         slider_h1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 slider_h1MouseDragged(evt);
@@ -223,11 +188,18 @@ public class MainWindow extends javax.swing.JFrame {
                 slider_h1MouseReleased(evt);
             }
         });
+        jPanel3.add(slider_h1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 178, 161, -1));
 
         lbl_h1_val.setText("0");
+        jPanel3.add(lbl_h1_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 178, 34, -1));
 
+        lbl_h_val.setText("0");
+        jPanel3.add(lbl_h_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 151, 34, -1));
+
+        slider_s1.setBackground(new java.awt.Color(196, 196, 196));
         slider_s1.setMaximum(255);
         slider_s1.setValue(255);
+        slider_s1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         slider_s1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 slider_s1MouseDragged(evt);
@@ -238,11 +210,50 @@ public class MainWindow extends javax.swing.JFrame {
                 slider_s1MouseReleased(evt);
             }
         });
+        jPanel3.add(slider_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 178, 156, -1));
+
+        lbl_s_val.setText("0");
+        jPanel3.add(lbl_s_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 151, 25, -1));
 
         lbl_s1_val.setText("0");
+        jPanel3.add(lbl_s1_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 178, 25, -1));
 
+        slider_s.setBackground(new java.awt.Color(196, 196, 196));
+        slider_s.setMaximum(255);
+        slider_s.setValue(0);
+        slider_s.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        slider_s.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                slider_sMouseDragged(evt);
+            }
+        });
+        slider_s.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                slider_sMouseReleased(evt);
+            }
+        });
+        jPanel3.add(slider_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 151, 156, -1));
+
+        slider_v.setBackground(new java.awt.Color(196, 196, 196));
+        slider_v.setMaximum(255);
+        slider_v.setValue(0);
+        slider_v.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        slider_v.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                slider_vMouseDragged(evt);
+            }
+        });
+        slider_v.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                slider_vMouseReleased(evt);
+            }
+        });
+        jPanel3.add(slider_v, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 143, -1));
+
+        slider_v1.setBackground(new java.awt.Color(196, 196, 196));
         slider_v1.setMaximum(255);
         slider_v1.setValue(255);
+        slider_v1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         slider_v1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 slider_v1MouseDragged(evt);
@@ -253,141 +264,180 @@ public class MainWindow extends javax.swing.JFrame {
                 slider_v1MouseReleased(evt);
             }
         });
+        jPanel3.add(slider_v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 143, -1));
 
         lbl_v1_val.setText("0");
+        jPanel3.add(lbl_v1_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 28, -1));
+
+        lbl_v_val.setText("0");
+        jPanel3.add(lbl_v_val, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, 28, -1));
+
+        lbl_img_v.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_v.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_v.setToolTipText("");
+        lbl_img_v.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_v.setBorder(javax.swing.BorderFactory.createTitledBorder("Channel V"));
+        jPanel3.add(lbl_img_v, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 38, 143, 107));
+
+        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel2.setText("Tunning HSV");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 4, -1, -1));
+
+        lbl_img_h.setBackground(new java.awt.Color(255, 255, 255));
+        lbl_img_h.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_h.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_h.setToolTipText("");
+        lbl_img_h.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_h.setBorder(javax.swing.BorderFactory.createTitledBorder("Channel H"));
+        jPanel3.add(lbl_img_h, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 38, 156, 102));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 44, 595, -1));
+
+        jPanel5.setBackground(new java.awt.Color(196, 196, 196));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel4.setText("Result Threshold");
+        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
+
+        lbl_img_h_thres.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_h_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_h_thres.setToolTipText("");
+        lbl_img_h_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_h_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres H"));
+        jPanel5.add(lbl_img_h_thres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 38, 171, 119));
+
+        lbl_img_s_thres.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_s_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_s_thres.setToolTipText("");
+        lbl_img_s_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_s_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres S"));
+        jPanel5.add(lbl_img_s_thres, new org.netbeans.lib.awtextra.AbsoluteConstraints(214, 38, 171, 119));
+
+        lbl_img_v_thres.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_v_thres.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_v_thres.setToolTipText("");
+        lbl_img_v_thres.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_v_thres.setBorder(javax.swing.BorderFactory.createTitledBorder("Thres V"));
+        jPanel5.add(lbl_img_v_thres, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 38, 171, 119));
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 600, 170));
+
+        lbl_img_mask.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
+        lbl_img_mask.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_mask.setToolTipText("");
+        lbl_img_mask.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_mask.setBorder(javax.swing.BorderFactory.createTitledBorder("Mask"));
+        jPanel1.add(lbl_img_mask, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 177, 97));
 
         fieldArea.setText("0");
+        jPanel1.add(fieldArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 550, 38, -1));
+
+        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel5.setText("Result Mask");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+
+        jTextField1.setText("0");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 580, 38, -1));
+
+        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel6.setText("Limit");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel7.setText("Overlap");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel8.setText(":");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 550, 13, -1));
+
+        jLabel9.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel9.setText(":");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 580, 14, -1));
+
+        btn_thres.setText("Run");
+        btn_thres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_thresActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_thres, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 580, 83, -1));
+
+        jPanel6.setBackground(new java.awt.Color(196, 196, 196));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel13.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel13.setText("Result");
+        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        jLabel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " Result Decision", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("SansSerif", 1, 12))); // NOI18N
+        jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 38, 130, 49));
+
+        lbl_img_other.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_img_other.setToolTipText("");
+        lbl_img_other.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lbl_img_other.setBorder(javax.swing.BorderFactory.createTitledBorder("Leukemia Detection"));
+        jPanel6.add(lbl_img_other, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 184, 127));
+
+        btn_extend.setText("Decision");
+        btn_extend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_extendActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btn_extend, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 90, -1));
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 350, 180));
+
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 680, 630));
+
+        jPanel4.setBackground(new java.awt.Color(196, 196, 196));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 900, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 900, 10));
+
+        jLabel3.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel3.setText("LEUKEMIA DETECTION");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel10.setText("HOME");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel11.setText("DATASET");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel12.setText("ABOUT");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_img_src, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_open)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btn_extend, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_thres, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(slider_h1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_h1_val, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(slider_s1, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_s1_val, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(slider_v1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lbl_img_h_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lbl_img_s_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lbl_img_v_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lbl_img_h, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lbl_img_s, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(slider_h, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lbl_h_val, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(slider_s, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lbl_s_val, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lbl_img_v, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(slider_v, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(lbl_v1_val, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(lbl_v_val, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addContainerGap(52, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbl_img_mask, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(fieldArea, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_img_other, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 925, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbl_img_h, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_img_s, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_img_v, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_img_src, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(btn_open))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_h_val)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(slider_v, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(slider_s, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lbl_s_val, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(lbl_v_val)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(slider_h, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(lbl_h1_val))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(slider_s1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(slider_h1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(slider_v1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(lbl_s1_val))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(lbl_v1_val)))
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_img_h_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_img_s_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_img_v_thres, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_thres)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_extend)
-                        .addGap(96, 96, 96))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbl_img_mask, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lbl_img_other, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(fieldArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(16, Short.MAX_VALUE))))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE)
         );
 
         pack();
@@ -576,6 +626,10 @@ Random rng = new Random(12345);
         thres_v();
     }//GEN-LAST:event_slider_v1MouseReleased
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     public BufferedImage toBufferedImage(Mat m) {
         int type = BufferedImage.TYPE_BYTE_GRAY;
         if (m.channels() > 1) {
@@ -628,6 +682,27 @@ Random rng = new Random(12345);
     private javax.swing.JButton btn_open;
     private javax.swing.JButton btn_thres;
     private javax.swing.JTextField fieldArea;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbl_h1_val;
     private javax.swing.JLabel lbl_h_val;
     private javax.swing.JLabel lbl_img_h;
